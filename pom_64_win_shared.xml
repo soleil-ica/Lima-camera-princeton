@@ -8,12 +8,12 @@
     </parent>
 
     <groupId>fr.soleil.lib.Lima.Camera</groupId>
-    <artifactId>LimaTeledyne-${aol}-shared-${mode}</artifactId>
-    <version>1.0.0-SNAPSHAT</version>
+    <artifactId>LimaTeledynePI-amd64-Windows-msvc12-shared-${mode}</artifactId>
+    <version>1.0.0</version>
 	
     <packaging>nar</packaging>
-    <name>LimaTeledyne</name>
-    <description>This module controls the Teledyne Detector </description>
+    <name>LimaTeledynePI</name>
+    <description>This module controls the Teledyne PI Detector </description>
 
 	<properties>
 		<sdkteledyne-lib>${project.basedir}\sdk\lib\</sdkteledyne-lib>
@@ -21,22 +21,17 @@
 	</properties>
     
     <scm>
-        <connection>scm:git:git://github.com/soleil-ica/Lima-camera-teledyne.git</connection>
-        <developerConnection>scm:git:git://github.com/soleil-ica/Lima-camera-teledyne.git</developerConnection>
-        <url>https://github.com/soleil-ica/Lima-camera-teledyne</url>
+        <connection>scm:git:git://github.com/soleil-ica/Lima-camera-princeton.git</connection>
+        <developerConnection>scm:git:git://github.com/soleil-ica/Lima-camera-princeton.git</developerConnection>
+        <url>https://github.com/soleil-ica/Lima-camera-princeton</url>
     </scm>
 	
     
 	<dependencies>
         <dependency>
              <groupId>fr.soleil.lib</groupId>
-            <artifactId>LimaCore-${aol}-shared-${mode}</artifactId>
+            <artifactId>LimaCore-amd64-Windows-msvc12-shared-${mode}</artifactId>
             <version>1.7.11</version>
-        </dependency>
-              <dependency>
-            <groupId>fr.soleil.lib</groupId>
-            <artifactId>LimaProcesslib-${aol}-shared-${mode}</artifactId>
-            <version>1.3.10</version>
         </dependency>
     </dependencies>
 	
